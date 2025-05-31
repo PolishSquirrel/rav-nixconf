@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Autostart – co uruchamia się razem z Openbox
+# Wzorowane na Archcraft/Adi1090x
+
+# Ustaw tapetę (feh, nitrogen, lub inny menedżer)
+feh --bg-scale ~/Pictures/Wallpapers/archcraft-nordic.jpg &
+
+# Picom (kompozytor cieni, przezroczystości)
+picom --config ~/.config/picom.conf &
+
+# Polybar (panel systemowy)
+polybar top &
+
+# Powiadomienia
+dunst &
+
+# Menedżer klipów (opcjonalnie)
+copyq &
+
+# Ustawienia klawiatury (opcjonalnie)
+setxkbmap -layout pl &
+
+# Automatyczne blokowanie ekranu (opcjonalnie)
+xautolock -time 10 -locker "i3lock-fancy" &
+
+# Bluetooth, network applet, volume, itp. (opcjonalnie)
+blueman-applet &
+nm-applet &

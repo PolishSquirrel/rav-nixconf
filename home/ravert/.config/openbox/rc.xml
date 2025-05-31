@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  rc.xml – główny plik konfiguracyjny Openbox
+  Styl: Archcraft / Adi1090x, minimalistyczny, nowoczesny
+  Dokumentacja: https://openbox.org/wiki/Help:Configuration
+-->
+<openbox_config>
+  <theme>
+    <name>Nordic</name>
+    <!-- Motyw nordic; możesz zmienić na inny motyw zainstalowany w systemie -->
+  </theme>
+  <desktops>
+    <number>4</number>
+    <firstdesk>1</firstdesk>
+    <names>
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
+    </names>
+  </desktops>
+  <focus>
+    <followMouse>yes</followMouse>
+    <focusNew>yes</focusNew>
+    <raiseOnFocus>no</raiseOnFocus>
+  </focus>
+  <placement>
+    <policy>Smart</policy>
+    <center>yes</center>
+    <monitor>Active</monitor>
+  </placement>
+  <resize>
+    <drawContents>yes</drawContents>
+    <popupShow>Nonpixel</popupShow>
+    <popupPosition>Center</popupPosition>
+  </resize>
+  <mouse>
+    <dragThreshold>8</dragThreshold>
+    <doubleClickTime>200</doubleClickTime>
+    <screenEdgeWarpTime>400</screenEdgeWarpTime>
+    <contextMenuButton>Right</contextMenuButton>
+  </mouse>
+  <keyboard>
+    <!-- Przykładowe skróty klawiszowe, wzorowane na Archcraft / Adi1090x -->
+    <keybind key="W-Return">
+      <action name="Execute"><command>alacritty</command></action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="Execute"><command>rofi -show drun</command></action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute"><command>flameshot gui</command></action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute"><command>i3lock-fancy</command></action>
+    </keybind>
+    <!-- Dodaj kolejne skróty według własnych preferencji -->
+  </keyboard>
+  <appearance>
+    <font place="ActiveWindow">
+      <name>JetBrains Mono</name>
+      <size>11</size>
+      <weight>Bold</weight>
+    </font>
+    <font place="InactiveWindow">
+      <name>JetBrains Mono</name>
+      <size>11</size>
+      <weight>Normal</weight>
+    </font>
+    <font place="MenuHeader">
+      <name>JetBrains Mono</name>
+      <size>11</size>
+      <weight>Bold</weight>
+    </font>
+    <font place="MenuItem">
+      <name>JetBrains Mono</name>
+      <size>11</size>
+      <weight>Normal</weight>
+    </font>
+  </appearance>
+  <dock>
+    <position>Bottom</position>
+    <visible>yes</visible>
+  </dock>
+</openbox_config>
