@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  menu.xml – menu kontekstowe Openbox
+  Styl: minimalistyczny, Archcraft / Adi1090x
+  Dokumentacja: https://openbox.org/wiki/Help:Menus
+-->
+<openbox_menu>
+  <menu id="root-menu" label="Openbox Menu">
+    <item label="Terminal">
+      <action name="Execute"><command>alacritty</command></action>
+    </item>
+    <item label="Przeglądarka">
+      <action name="Execute"><command>firefox</command></action>
+    </item>
+    <item label="Pliki">
+      <action name="Execute"><command>thunar</command></action>
+    </item>
+    <separator/>
+    <item label="Rofi - Launch">
+      <action name="Execute"><command>rofi -show drun</command></action>
+    </item>
+    <separator/>
+    <item label="Zablokuj ekran">
+      <action name="Execute"><command>i3lock-fancy</command></action>
+    </item>
+    <item label="Zrestartuj Openbox">
+      <action name="Reconfigure"/>
+    </item>
+    <separator/>
+    <item label="Wyloguj">
+      <action name="Exit"/>
+    </item>
+  </menu>
+</openbox_menu>
