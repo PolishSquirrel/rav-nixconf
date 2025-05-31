@@ -1,0 +1,39 @@
+; Polybar config – wzorowane na Archcraft/Adi1090x
+; Dokumentacja: https://polybar.github.io/docs/man-polybar.5.html
+
+[bar/top]
+width = 100%
+height = 30
+font-0 = "JetBrains Mono:size=11;2"
+background = #2e3440
+foreground = #d8dee9
+modules-left = workspaces xwindow
+modules-center = date
+modules-right = cpu memory battery volume network
+
+[module/workspaces]
+type = internal/xworkspaces
+
+[module/xwindow]
+type = internal/xwindow
+
+[module/date]
+type = internal/date
+interval = 5
+date = "%a %d %b %H:%M"
+
+[module/cpu]
+type = internal/cpu
+
+[module/memory]
+type = internal/memory
+
+[module/battery]
+type = internal/battery
+
+[module/volume]
+type = internal/volume
+
+[module/network]
+type = internal/network
+interface = wlp2s0
