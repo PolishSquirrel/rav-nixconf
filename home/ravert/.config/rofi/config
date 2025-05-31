@@ -1,0 +1,11 @@
+/* Rofi – minimalistyczny launcher
+   Styl: nordic, Archcraft/Adi1090x
+   Dokumentacja: https://github.com/davatorium/rofi
+*/
+
+rofi.theme: nord.rasi
+rofi.font: "JetBrains Mono 11"
+display-drun: "Aplikacje"
+display-run: "Polecenie"
+sidebar-mode: true
+fullscreen: false
