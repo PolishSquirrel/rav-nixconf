@@ -9,7 +9,7 @@
 ### Krok 3. Uruchom instalator (skrypt), podając repo, użytkownika i UUID vaulta:
 ```sh
 bash <(curl -fsSL [https://raw.githubusercontent.com/TWOJ_USER/nixos-t480-modular/main/install.sh](https://github.com/PolishSquirrel/rav-nixconf/blob/600f9f77e1b5ad7779347da97785e6e8ad0c395b/install.sh) \
-     --repo https://github.com/TWOJ_USER/nixos-t480-modular.git \
+     --repo https://github.com/PolishSquirrel/rav-nixconf.git \
      --user ravert \
      --vault-uuid abcd-1234-efgh-9876
 ```
